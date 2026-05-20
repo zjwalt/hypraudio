@@ -1,0 +1,33 @@
+
+BluetoothPanel {
+  height: 1fr;
+  width: 30%;
+  border: round #515151;
+  background: transparent;
+  padding: 1 2;
+}
+
+AudioPanel, OutputDevicesPanel {
+  height: 1fr;
+  border: round #515151;
+  background: transparent;
+  padding: 1 2;
+}
+
+BluetoothPanel:focus-within, AudioPanel:focus-within, OutputDevicesPanel:focus-within {
+  border: round #e3bdff;
+}
+
+ListView, ListItem {
+  background: transparent;
+}
+
+DeviceItem:hover {
+  border: round #e3bdff;
+
+}
+
+DeviceItem.-highlight {
+  padding-left: 1;
+  border-left: thick #e3bdff;
+}

@@ -1,11 +1,10 @@
 from textual.app import ComposeResult
 from textual.widget import Widget
 from textual.widgets import Static, ListView, ListItem, Label
-from src.audio.audio_controller import AudioController
 
 
-class AudioPanel(Widget):
-    BORDER_TITLE = "Audio Settings"
+class OutputDevicesPanel(Widget):
+    BORDER_TITLE = "Output Devices"
 
     def compose(self) -> ComposeResult:
         yield ListView()
